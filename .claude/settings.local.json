@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -c \"from PIL import Image; print\\('PIL ok'\\)\")",
+      "Bash(where cwebp *)",
+      "Bash(where magick *)",
+      "Bash(where python *)",
+      "Bash(where npx *)",
+      "Bash(where node *)",
+      "Bash(python -c ' *)",
+      "Bash(python -m http.server 8080)",
+      "Bash(curl -s -o /dev/null -w \"HTTP %{http_code} | %{size_download} bytes | %{time_total}s\\\\n\" http://localhost:8080/)",
+      "Bash(curl -s -o /dev/null -w \"Logo: HTTP %{http_code}\\\\n\" http://localhost:8080/logo.webp)",
+      "Bash(curl -s -o /dev/null -w \"Status: HTTP %{http_code}\\\\n\" http://localhost:8080/)",
+      "Bash(cmd.exe /c start http://localhost:8080/)",
+      "Bash(curl -s -o /dev/null -w \"HTTP %{http_code}\\\\n\" http://localhost:8080/)",
+      "Bash(netstat -ano)",
+      "Bash(curl -s -o /dev/null -w \"index.html → HTTP %{http_code} \\(%{size_download} bytes\\)\\\\n\" http://localhost:8080/)",
+      "Bash(curl -s -o /dev/null -w \"logo.webp   → HTTP %{http_code}\\\\n\" http://localhost:8080/logo.webp)",
+      "Bash(curl -s -o /dev/null -w \"hero-bg.webp → HTTP %{http_code}\\\\n\" http://localhost:8080/img/hero-bg.webp)",
+      "Bash(curl -s -o /dev/null -w \"index.html -> HTTP %{http_code} \\(%{size_download} bytes\\)\\\\n\" http://localhost:8080/)"
+    ]
+  }
+}
