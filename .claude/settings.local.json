@@ -18,7 +18,10 @@
       "Bash(curl -s -o /dev/null -w \"index.html → HTTP %{http_code} \\(%{size_download} bytes\\)\\\\n\" http://localhost:8080/)",
       "Bash(curl -s -o /dev/null -w \"logo.webp   → HTTP %{http_code}\\\\n\" http://localhost:8080/logo.webp)",
       "Bash(curl -s -o /dev/null -w \"hero-bg.webp → HTTP %{http_code}\\\\n\" http://localhost:8080/img/hero-bg.webp)",
-      "Bash(curl -s -o /dev/null -w \"index.html -> HTTP %{http_code} \\(%{size_download} bytes\\)\\\\n\" http://localhost:8080/)"
+      "Bash(curl -s -o /dev/null -w \"index.html -> HTTP %{http_code} \\(%{size_download} bytes\\)\\\\n\" http://localhost:8080/)",
+      "Bash(curl -s -o /dev/null -w \"index.html \\(HTTP %{http_code}\\): %{size_download} bytes\\\\n\" http://localhost:8080/)",
+      "Bash(curl -s -o /dev/null -w 'img/__TRACKED_VAR__: HTTP %{http_code} \\(%{size_download} bytes\\)\\\\n' http://localhost:8080/img/__TRACKED_VAR__)",
+      "Bash(curl -s -o /dev/null -w \"index.html: HTTP %{http_code} \\(%{size_download} bytes\\)\\\\n\" http://localhost:8080/)"
     ]
   }
 }
